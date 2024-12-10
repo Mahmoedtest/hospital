@@ -1,0 +1,446 @@
+/* إعدادات عامة */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    animation: fadeInDown 1s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #007bff;
+    color: #fff;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 32px;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* خدماتنا */
+#services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#services ul li {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    margin: 10px;
+    font-size: 18px;
+    animation: zoomIn 1s ease-out;
+}
+
+#services ul li:hover {
+    background: #007bff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* الأطباء */
+#doctors {
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+#doctors h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.doctor-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* تأثير الهوفر على صور الأطباء */
+.doctor {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    animation: flipInY 1s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor:hover {
+    transform: scale(1.05); /* تكبير الصورة عند التمرير */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* تغيير الظل عند الهوفر */
+}
+
+.doctor img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* إضافة تأثير على الصورة */
+}
+
+
+.doctor h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #007bff;
+}
+
+.doctor p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* حجز موعد */
+#appointment {
+    padding: 40px 20px;
+    background: #e9ecef;  /* الخلفية التي تريدها */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* ارتفاع كامل الشاشة */
+}
+
+#appointment h2 {
+    font-size: 28px;
+    text-align: center;  /* لجعل النص في المنتصف */
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+    display: inline-block; /* لجعل الخلفية حول النص فقط */
+    background-color: #007bff;  /* خلفية */
+    color: white;  /* لون النص */
+    padding: 5px 15px;  /* إضافة padding حول النص */
+    border-radius: 5px;  /* لتقريب الحواف */
+    transition: background-color 0.3s ease;  /* تأثير الانتقال */
+    width: auto;  /* عرض النص تلقائي */
+    margin-left: auto; /* توازن الهامش لجعل النص في المنتصف */
+    margin-right: auto;
+}
+
+#appointment h2:hover {
+    background-color: #0056b3;  /* تغيير الخلفية عند المرور */
+}
+
+form {
+    width: 100%;
+    max-width: 600px; /* نفس حجم فورم التواصل */
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 1s ease-out;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* قسم Contact Us */
+#contact {
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* ارتفاع كامل الشاشة */
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+    display: inline-block;
+    background-color: #007bff;  /* خلفية */
+    color: white;  /* لون النص */
+    padding: 5px 15px;  /* إضافة padding حول النص */
+    border-radius: 5px;  /* لتقريب الحواف */
+    transition: background-color 0.3s ease;  /* تأثير الانتقال */
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact h2:hover {
+    background-color: #0056b3;  /* تغيير الخلفية عند المرور */
+}
+
+.contact-form {
+    margin-top: 20px;
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 1s ease-out;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* تنسيق روابط التواصل الاجتماعي */
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    font-size: 30px; /* حجم الأيقونات */
+    color: #333;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* تأثير hover على أيقونات التواصل الاجتماعي */
+.social-icons a:hover {
+    color: #0073e6;  /* تغيير اللون عند التمرير */
+    transform: scale(1.1);  /* تكبير الأيقونة بشكل بسيط عند التمرير */
+    transition: transform 0.3s ease, color 0.3s ease;  /* إضافة تأثير الانتقال */
+}
+
+.social-icons i {
+    margin-right: 8px; /* المسافة بين الأيقونة والنص */
+}
+
+/* تأثير hover على أيقونات التواصل الاجتماعي */
+.social-icons a:hover {
+    color: #0073e6;  /* تغيير اللون عند التمرير */
+    transform: scale(1.1);  /* تكبير الأيقونة بشكل بسيط عند التمرير */
+    transition: transform 0.3s ease, color 0.3s ease;  /* إضافة تأثير الانتقال */
+}
+
+/* تنسيق السهم */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+/* تغيير لون السهم عند التمرير عليه */
+.scroll-to-top:hover {
+    background-color: #0073e6;
+}
+
+/* إضافة تأثير عند الضغط على السهم */
+.scroll-to-top i {
+    margin-right: 5px;
+}
+
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 16px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* الأنيميشن */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes flipInY {
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
